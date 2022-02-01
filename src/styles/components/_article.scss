@@ -1,0 +1,119 @@
+.article {
+  position: relative;
+  box-sizing: border-box;
+  box-shadow: 0 4px 4px rgba(192, 189, 189, 0.25);
+  border-radius: 0 0 5px 5px;
+  margin-bottom: 30px;
+  margin-right: 5%;
+  width: 30%;
+  height: 400px;
+
+  &_last {
+    margin-right: 0;
+  }
+
+  &__text {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    max-width: 100%;
+    height: calc(100% - 180px - 20px - 16px);
+    margin: 20px 24px 24px 16px;
+
+
+    p {
+      margin-bottom: 0;
+    }
+
+    &-title {
+      width: 100%;
+      margin: 0;
+      font-size: 20px;
+      line-height: 24px;
+      color: rgba(45, 55, 72, 1);
+      //max-height: 50px;
+      //overflow-y: hidden;
+    }
+
+    &-description {
+      font-size: 14px;
+      line-height: 16px;
+      color: rgba(113, 128, 150, 1);
+      width: 100%;
+      overflow-x: hidden;
+      overflow-y: hidden;
+      max-height: 85px;
+    }
+
+    &-date {
+      font-size: 12px;
+      line-height: 14px;
+      color: rgba(113, 128, 150, 1);
+
+    }
+
+    &-link {
+      color: #000000;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 14px;
+      &:hover {
+        color: rgba(47, 128, 237, 1);
+      }
+
+    }
+
+    &-status {
+      width: 100%;
+      color: rgba(113, 128, 150, 1);
+      font-size: 12px;
+      line-height: 14px;
+    }
+  }
+
+  &__img {
+    display: block;
+    width: 100%;
+    height: 180px;
+    background-size: cover;
+    text-decoration: none;
+    outline: none;
+  }
+
+  &_main {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row-reverse;
+    border-radius: 5px 0 0 5px;
+    box-shadow: 0 5px 4px rgba(221, 221, 221, 0.25);
+    border: 1px solid #E2E2E2;
+
+    .article {
+      &__text {
+        width: calc(60% - 80px - 60px);
+        height: calc(100% - 80px);
+        margin: 40px 80px 40px 60px;
+
+        &-title {
+          font-size: 30px;
+          line-height: 36px;
+        }
+
+        &-description {
+          max-height: 55px;
+        }
+      }
+
+      &__img {
+        width: 40%;
+        height: auto;
+      }
+    }
+
+  }
+}
+

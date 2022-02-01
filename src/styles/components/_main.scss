@@ -1,0 +1,54 @@
+.main {
+  margin: 0 60px;
+  position: relative;
+
+  &__add-more-articles {
+    margin: 30px auto;
+    display: block;
+    outline: none;
+    padding: 5px;
+
+    &.show {
+      display: block;
+    }
+  }
+
+  &__article-list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__scroll-top {
+    position: fixed;
+    right: 60px;
+    bottom: 100px;
+    border-radius: 5px;
+    background: #2F80ED;
+    outline: none;
+    border: none;
+    padding: 10px;
+    display: none;
+    align-items: center;
+    cursor: pointer;
+    span {
+      color: white;
+      font-size: 16px;
+      line-height: 20px;
+      font-weight: 600;
+    }
+
+    &-arrow {
+      width: 17px;
+      height: 17px;
+      background-size: cover;
+      margin-left: 10px;
+      margin-top: 1px;
+    }
+
+    &.show {
+      display: flex;
+    }
+
+  }
+}

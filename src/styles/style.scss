@@ -1,0 +1,20 @@
+@import "components/header";
+@import "components/burger";
+@import "components/main";
+@import "components/article";
+@import "components/footer";
+@import "components/main-page";
+@import "components/loader";
+@import "components/add-more-articles";
+
+@import "fonts";
+
+body {
+  background: rgba(255, 255, 255, 1);
+  margin: 0;
+  font-family: "Inter", sans-serif;
+
+  & > * {
+    margin: 0 60px;
+  }
+}
